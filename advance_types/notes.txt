@@ -1,0 +1,16 @@
+The Sized Trait
+What is Sized?:
+The Sized trait is a special trait in Rust that indicates whether a type's size is known at compile time. Most types are Sized, meaning Rust knows their size in advance.
+
+Default Generic Functions:
+By default, generic functions in Rust assume that their type parameters are Sized. This means they only work with types whose sizes are known at compile time.
+A
+llowing Unsized Types:
+
+To work with types that may or may not be Sized, you use ?Sized. For example:
+rust
+Copy code
+fn generic<T: ?Sized>(t: &T) {
+    // --snip--
+}
+This function can handle types that are not Sized by taking a reference to them (&T).

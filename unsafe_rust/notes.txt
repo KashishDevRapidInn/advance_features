@@ -1,0 +1,18 @@
+Unsafe superpowers:
+1. Dereference a raw pointer
+2. Call an unsafe function or method
+3. Access or modify a mutable static variable
+4. Implement an unsafe trait
+5. Access fields of a union
+
+
+Different from references and smart pointers, raw pointers:
+
+    Are allowed to ignore the borrowing rules by having both immutable and mutable pointers or multiple mutable pointers to the same location
+    Aren’t guaranteed to point to valid memory
+    Are allowed to be null
+    Don’t implement any automatic cleanup
+
+as_mut_ptr returns a raw pointer with the type *mut i32
+
+Static variables can only store references with the 'static lifetime

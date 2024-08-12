@@ -1,0 +1,3 @@
+What Are Macros?
+Macros are a way to write code that writes more code. They can be used to automate repetitive tasks, provide more flexible code, and handle complex patterns in a concise way.
+They are different from functions because they operate on the code itself rather than on values at runtime. This allows them to do things that functions cannot, such as generate multiple functions or handle various input patterns.
